@@ -1,24 +1,24 @@
 <!doctype html>
+<meta charset="utf-8" />
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arcadia Pong</title>
-    <meta name="description" content="A pong clone written in TypeScript + Vite">
-    <link rel="stylesheet" href="/styles.css" />
-  </head>
-  <body>
-    <div class="app">
-      <header class="topbar">
-        <h1 class="title">Arcadia Pong</h1>
-        <p class="subtitle">Left: mouse / ↑↓ keys - Right: Predicative ML</p>
-        <p class="controls">Controls: Move your mouse over the canvas or use the ↑↓ arrow keys to mouve the left paddle. Use space to serve.</p>
-      </header>
+<link rel="icon" href="/logo.png" />  
+<header class="header">
+  <div class="header-row">
+    <img src="/logo.png" alt="Arcadia Pong logo" class="logo" />
+    <h1>Arcadia Pong</h1>
+  </div>
 
-      <main class="main">
-        <canvas id="game" width="900" height="560"></canvas>
-      </main>
+  <p class="controls">
+    Controls: Move your mouse over the canvas or use the ↑↓ arrow keys to move
+    the left paddle. Use space to serve.
+  </p>
+  <p class="alt-controls">Left: mouse / ↑↓ keys - Right: Predicative ML</p>
+</header>
+
+<main class="container">
+  <div class="canvas-wrap">
+    <canvas id="game"></canvas>
+  </div>
 
       <script type="module" src="/src/main.ts"></script>
   </body>
